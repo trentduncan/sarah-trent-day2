@@ -6,9 +6,9 @@ let decodedSentence = input.reduce((accumulator, element) => {
 	
   if (element.length === 3) {
     return accumulator + ' ';
-  } else {
-    return accumulator + element[(element.length - 1)].toUpperCase();
   }
+    return accumulator + element[(element.length - 1)].toUpperCase();
+  
 }, '');
 
 

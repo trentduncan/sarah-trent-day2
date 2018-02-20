@@ -4,6 +4,8 @@ let steps = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 const filteredSteps = steps.filter(element => element[0] >=0 && element[1] >=0);
 const addSteps = filteredSteps.map(element => element[0] + element[1]);
 let finalSteps = [];
+
+//returns an array of the total number of steps for each movement (whether negative or positive)
 const totalSteps = steps.forEach(element => finalSteps.push(Math.abs(element[0]) + Math.abs(element[1])));
 
 
