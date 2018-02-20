@@ -4,11 +4,11 @@ const sentence = 'noggin oreo the moon time tele steed his tent apollo her lives
 const input = sentence.split(' ');
 let decodedSentence = input.reduce((accumulator, element) => {
 	
-	if (element.length === 3) {
-		return accumulator + ' ';
-	} else {
-		return accumulator + element[(element.length - 1)].toUpperCase();
-	}
+  if (element.length === 3) {
+    return accumulator + ' ';
+  } else {
+    return accumulator + element[(element.length - 1)].toUpperCase();
+  }
 }, '');
 
 
